@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import React from "react";
 import "./globals.css";
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
@@ -15,8 +16,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "optical fiber",
-  description: "optical fibre-Aamira",
+  title: "oldmonk-ai",
+  description: "Ai-ads too by oldmonk",
 };
 
 export default function RootLayout({ children }) {
@@ -27,8 +28,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         <StairTransition />
-        <PageTransition>
-        {children}</PageTransition>
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );

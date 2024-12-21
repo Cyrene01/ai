@@ -1,33 +1,28 @@
-import Link from "next/link"
-import { Button } from "./ui/button"
-import Nav from "./Nav"
-import MobileNav from "./MobileNav"
+import Link from "next/link";
+import { Button } from "./ui/button";
+import Nav from "./Nav";
+import React from "react";
+import MobileNav from "./MobileNav";
 const Header = () => {
   return (
-   <header className="py-8 xl:py-12 text-white">
-    <div className="container mx-auto flex justify-between">
-<Link href="/">
-<h1>
-Aamira <span className="text-accent">.</span>
-</h1>
-</Link>
-<div className="hidden xl:flex items-center gap-8">
-<Nav />
-<Link href="/contact">
-<Button>
-    Simulate
-</Button>
-</Link>
-</div>
+    <header className="py-8 xl:py-12 text-white">
+      <div className="container mx-auto flex justify-between">
+        <Link href="/">
+          <h1>
+            ads-gpt<span className="text-accent">.</span>
+          </h1>
+        </Link>
+        <div className="hidden xl:flex items-center gap-8">
+          <Nav />
+          <Link href="/contact"></Link>
+        </div>
 
-<div className="xl:hidden">
-  <MobileNav />
-</div>
+        <div className="xl:hidden">
+          <MobileNav />
+        </div>
+      </div>
+    </header>
+  );
+};
 
-    </div>
-        
-   </header>
-  )
-}
-
-export default Header
+export default Header;
